@@ -1,0 +1,76 @@
+.todos {
+  &__sidebar {
+    background-color: #35844d;
+    color: #ffffff;
+    float: left;
+    font-weight: 100;
+    height: calc(100vh - 2em);
+    margin-right: 2em;
+    padding: 2em 2em 0 2em;
+    width: 300px;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1em;
+  }
+
+  &__sidebar-list {
+    padding-left: 1em;
+  }
+
+  &__sidebar-list-name {
+    display: flex;
+    justify-content: space-between;
+    padding: .5em 0;
+    transition: all 0.3s ease-in;
+
+    &:hover {
+      color: lighten(#35844d, 40%);
+      cursor: pointer;
+    }
+  }
+
+  &__list-container {
+    max-width: 800px;
+    padding: 2em 2em 0 2em;
+  }
+
+  &__list-title {
+    padding-bottom: 1em;
+  }
+
+  &__list {
+    padding-bottom: 1em;
+  }
+
+  &__editor {
+    background-color: #35844d;
+    border: 0;
+    border-bottom: 1px solid white;
+    caret-color: #ffffff;
+    outline: none;
+  }
+
+  &__task-checkbox {
+    width: 1.3em;
+    height: 1.3em;
+    background-color: white;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 1px solid #ddd;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+    margin-right: 1em;
+
+    &:checked {
+      background-color: lighten(#35844d, 10%);
+    }
+  }
+
+  &__todos-task {
+    font-size: .85em;
+  }
+}
